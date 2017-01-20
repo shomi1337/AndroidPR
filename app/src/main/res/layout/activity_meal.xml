@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="restaurants.activity.MealActivity">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/yin"
+        android:layout_below="@+id/app_bar"
+        android:src="@drawable/platter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="White rice"
+        android:id="@+id/mealdesc"
+        android:padding="5dp"
+
+
+        android:layout_below="@+id/yin"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Price: 1 eur"
+        android:id="@+id/confirm"
+        android:layout_below="@+id/mealdesc"
+        android:padding="5dp"
+        />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Confirm order"-->
+        <!--android:id="@+id/order"-->
+        <!--android:layout_below="@+id/confirm"-->
+        <!--android:padding="5dp"-->
+        <!--/>-->
+
+</RelativeLayout>
